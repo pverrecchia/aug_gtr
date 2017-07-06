@@ -29,7 +29,8 @@ I experimented with two types of simple motion control in Pd - continuous and di
 
 ## Additional Resources
 * [I2C library for MPU6000](https://www.i2cdevlib.com/devices/mpu6050#source)
-* [Intro to complimentary filter](http://www.pieter-jan.com/node/11)
-* [More IMU fusion info](http://ca.mouser.com/applications/sensor_solutions_mems/)
+* [Intro to the complimentary filter](http://www.pieter-jan.com/node/11)
+* [More complimentary filter info](http://d1.amobbs.com/bbs_upload782111/files_44/ourdev_665531S2JZG6.pdf)
+* [Even more IMU fusion info](http://ca.mouser.com/applications/sensor_solutions_mems/)
 
 
