@@ -28,7 +28,8 @@ I experimented with two types of simple motion control in Pd - continuous and di
 * Electric guitar + amplifier
 
 ## Additional Resources
-[I2C library for MPU6000](https://www.i2cdevlib.com/devices/mpu6050#source)
-[Intro to complimentary filter](http://www.pieter-jan.com/node/11)
+* [I2C library for MPU6000](https://www.i2cdevlib.com/devices/mpu6050#source)
+* [Intro to complimentary filter](http://www.pieter-jan.com/node/11)
+* [More IMU fusion info](http://ca.mouser.com/applications/sensor_solutions_mems/)
 
 
