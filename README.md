@@ -11,7 +11,7 @@ The goal of this project is to achieve basic real-time gestural control of guita
 
 ## Implementation
 
-I2C communication between the IMU and the Arduino was set up using Jeff Rowberg's i2cdevlib. Pitch, defined here as the angle between the guitar neck and horizontal, is calculated using a Complimentary filter. A Complimentary filter combines acceleration and angular velocity measurments from the IMU to compute angular position. It is a good choice because it is simple to implement in code and effectively reduces the measurment error associated with accelerometers and gyroscopes. Alternatively, the more robust Kalman filter would yeild a more accurate result but is conceptually and computationally complex. More information about the Complimentray filter's use with IMUs can be found here. 
+I2C communication between the IMU and the Arduino was set up using Jeff Rowberg's i2cdevlib. Pitch, defined here as the angle between the guitar neck and horizontal, is calculated using a Complimentary filter. A Complimentary filter combines acceleration and angular velocity measurments from the IMU to compute angular position. It is a good choice because it is simple to implement in code and effectively reduces the measurment error associated with accelerometers and gyroscopes. Alternatively, the more robust Kalman filter would yeild a more accurate result but is conceptually and computationally complex. More information about the Complimentray filter's use with IMUs can be found [here](http://scolton.blogspot.ca/2012/09/fun-with-complementary-filter-multiwii.html). 
 
 Next, the pitch value is offset and scaled to one byte in preparation for serial transmission to Pd. Once received in Pd, the angle's offset is removed and can be used to control patch parameters. Meanwhile, the USB audio interface is used to get the guitar's audio signal into Pd. To use the patch, pictured below, the toggle switches just need to be turned on for one or both of the effects. The dry signal bypasses the effects when neither is selected. At the bottom of the patch, there is a live-updating time-lapse plot of the pitch angle. 
 
@@ -24,8 +24,11 @@ I experimented with two types of simple motion control in Pd - continuous and di
 * MPU 6000 IMU
 * Arduino Mega 2560
 * Tascam US-100 USB audio interface
-* PureData
+* [PureData](https://puredata.info/)
 * Electric guitar + amplifier
 
-## Additional Reading
+## Additional Resources
+[I2C library for MPU6000](https://www.i2cdevlib.com/devices/mpu6050#source)
+[Intro to complimentary filter](http://www.pieter-jan.com/node/11)
+
 
